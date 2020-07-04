@@ -1,0 +1,23 @@
+/* Fonts */
+$font-default: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-title: 'Open Sans', Helvetica, Arial, sans-serif;
+
+/* Colors */
+$color-background: #eee;
+$color-background-2: #d2d2d2;
+$color-foreground: #444;
+$color-foreground-2: #707070;
+
+$mycolor: red;
+
+/* Mixins */
+@mixin flex() {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+
+  * {
+    margin: 0 auto;
+  }
+}

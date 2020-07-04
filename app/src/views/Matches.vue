@@ -1,13 +1,18 @@
 <template>
   <div class="matches">
     <HeaderMenu title="Matches" backLink="/standings"></HeaderMenu>
-    <Match :match="match"></Match>
+    <CenterContent>
+      <Subtitle text="Semi-finals"></Subtitle>
+      <Match :match="match"></Match>
+    </CenterContent>
   </div>
 </template>
 
 <script lang="ts">
+import CenterContent from '@/components/CenterContent.vue';
 import HeaderMenu from '@/components/HeaderMenu.vue';
 import Match from '@/components/Match.vue';
+import Subtitle from '@/components/Subtitle.vue';
 import { IMatch } from '@/models';
 
 const tMatch: IMatch = {
@@ -33,8 +38,10 @@ export default {
     };
   },
   components: {
+    CenterContent,
     HeaderMenu,
     Match,
+    Subtitle,
   },
 };
 </script>
